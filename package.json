@@ -1,8 +1,8 @@
 {
-  "name": "simplefolio",
-  "version": "1.0.1",
+  "name": "caduobristo-portfolio",
+  "version": "1.0.0",
   "private": "true",
-  "description": "A clean, beautiful and responsive portfolio template for Developers!",
+  "description": "Portfólio pessoal de Carlos Eduardo Obristo",
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
@@ -10,15 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cobiwave/simplefolio"
+    "url": "git+https://github.com/caduobristo/caduobristo.github.io.git"
   },
   "keywords": [],
-  "author": "Jacobo Martinez",
+  "author": "Carlos Eduardo Obristo",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cobiwave/simplefolio/issues"
-  },
-  "homepage": "https://github.com/cobiwave/simplefolio#readme",
+  "homepage": "https://caduobristo.github.io",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
     "parcel": "^2.8.2",
