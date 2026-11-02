@@ -1,13 +1,16 @@
-// COLORS
-$primary-color: #181818;
-$secondary-color: #5c5c5c;
+// COLORS (Paleta base escura alinhada ao README do GitHub)
+// Cor principal: #0d1117 (Obsidian Dark - Banner rodapé)
+// Cor secundária: #1E293B (Slate Dark - Badges e Banner cabeçalho)
+
+$primary-color: #0d1117;       // Cor principal escura
+$secondary-color: #1E293B;     // Cor secundária escura
 
 $white-color: #fff;
 
-$dark-grey: #121212;
-$light-grey: #d2d2d2;
+$dark-grey: #0d1117;           // Rodapé
+$light-grey: #e2e8f0;          // Bordas suaves
 
-$dark-blue-text: #181818; // For Headings
+$dark-blue-text: #0d1117;      // Títulos e textos escuros
 
 // FONT SIZE
 $default-font-size: 1.6rem;
