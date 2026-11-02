@@ -10,23 +10,25 @@
   For business & inquires, contact me -> jacobojavier98@gmail.com
 -->
 <!DOCTYPE html>
-<html lang="en" class="sr">
+<html lang="pt-BR" class="sr">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
 
-    <!-- Todo: put here your site title -->
-    <title>Carlos Eduardo Obristo | Developer</title>
-    <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="caduobristo, Carlos Eduardo Obristo, developer, portfolio" />
-    <!-- Todo: improve your SEO by adding a small description of you -->
-    <meta name="description" content="Carlos Eduardo Obristo | Developer" />
+    <title>Carlos Eduardo Obristo | Desenvolvedor</title>
+    <meta name="keywords" content="caduobristo, Carlos Eduardo Obristo, desenvolvedor, portfolio, projetos" />
+    <meta name="description" content="Portfólio pessoal de Carlos Eduardo Obristo | Desenvolvedor" />
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
     <link rel="stylesheet" href="styles.scss" />
     <script
@@ -35,109 +37,146 @@
     ></script>
   </head>
 
-  <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
   <body>
     <div id="top"></div>
 
-    <!-- **** Hero Section **** -->
+    <!-- **** Seção Hero **** -->
     <section id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title load-hidden">
-          Hi, my name is <span class="text-color-main">Carlos Eduardo Obristo</span>
+          Olá, meu nome é <span class="text-color-main">Carlos Eduardo Obristo</span>
           <br />
-          I'm the Unknown Developer.
+          Cientista de Dados & Desenvolvedor de Software.
         </h1>
         <p class="hero-cta load-hidden">
           <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
-            >Know more</a
+            >Saiba mais</a
           >
         </p>
       </div>
     </section>
-    <!-- /END Hero Section -->
+    <!-- /FIM Seção Hero -->
 
-    <!-- **** About Section **** -->
+    <!-- **** Seção Sobre mim **** -->
     <section id="about">
       <div class="container">
-        <h2 class="section-title load-hidden">About me</h2>
+        <h2 class="section-title load-hidden">Sobre mim</h2>
         <div class="row about-wrapper">
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__image load-hidden">
               <img
-                alt="Profile Image"
+                alt="Foto de Perfil"
                 class="img-fluid rounded shadow-lg"
                 height="auto"
                 width="300px"
                 src="assets/profile.jpg"
-                alt="Profile Image"
               />
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
-                This is where you can describe about yourself. The more you
-                describe about yourself, the more chances you have!
+                Sou desenvolvedor de software com forte atuação em Data Science e Engenharia de Dados. Trabalho na interseção entre Inteligência Artificial, processamento de dados complexos e a construção de produtos digitais. No mercado corporativo, desenvolvo agentes de IA e utilitários integrados ao ecossistema Linux, traduzindo modelos avançados e pipelines técnicos em soluções escaláveis e acessíveis para o usuário final. Minha base tecnológica é estruturada em Python, PyTorch, SQL e ferramentas de orquestração de dados (como Airflow), unindo o rigor analítico e a modelagem de dados às melhores práticas de engenharia de software para resolver problemas reais de negócio.
               </p>
               <p class="about-wrapper__info-text">
-                Extra Information about you! like hobbies and your goals.
+                Busco impulsionar produtos e negócios através da Ciência e Engenharia de Dados, sempre explorando novas tecnologias. Fora do código, minhas paixões se dividem entre jogos, boa música e um bom livro.
               </p>
-              <span class="d-flex mt-3">
+              <!-- <span class="d-flex mt-3">
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--resume"
                   href="assets/resume.pdf"
                 >
-                  View Resume
+                  Ver Currículo
                 </a>
-              </span>
+              </span> -->
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- /END About Section -->
+    <!-- /FIM Seção Sobre mim -->
 
-    <!-- **** Projects Section **** -->
+    <!-- **** Seção de Projetos **** -->
     <section id="projects">
       <div class="container">
         <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projects</h2>
+          <h2 class="section-title dark-blue-text">Projetos</h2>
 
-          <!-- Notice: each .row is a project -->
+          <!-- Projeto 0 -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 0</h3>
+                <h3 class="project-wrapper__text-title">Transformers de áudio para classificação de efeitos de guitarra</h3>
                 <div>
                   <p class="mb-4">
-                    Describe the project being very specific, you can use the Twitter standard: no more than 280 characters: 
-                    complement the information: the skills learned or reinforced in its realization and how you faced it, 
-                    prove to be proactive in the search for solutions.
+                    Pesquisa acadêmica focada na classificação de sinais de áudio complexos utilizando arquiteturas modernas de Deep Learning. O projeto estabelece baselines rigorosos com redes convolucionais e avalia o desempenho e a eficiência computacional de Transformers de Áudio na extração de características de espectrogramas.
                   </p>
+                </div>
+                <div class="project-wrapper__tech">
+                  <p class="project-wrapper__tech-title">Stack & Tecnologias:</p>
+                  <ul class="project-wrapper__tech-list">
+                    <li class="project-wrapper__tech-item">
+                      <span class="tech-icon"><i class="devicon-python-plain colored"></i></span>
+                      <span class="tech-name">Python</span>
+                    </li>
+                    <li class="project-wrapper__tech-item">
+                      <span class="tech-icon"><i class="devicon-pytorch-original colored"></i></span>
+                      <span class="tech-name">PyTorch</span>
+                    </li>
+                    <li class="project-wrapper__tech-item">
+                      <span class="tech-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                          <path d="M3 10v4M6 6v12M9 3v18M12 7v10M15 4v16M18 8v8M21 11v2" stroke="#f59e0b" stroke-width="2.2" stroke-linecap="round"/>
+                        </svg>
+                      </span>
+                      <span class="tech-name">Áudio Transformers</span>
+                    </li>
+                    <li class="project-wrapper__tech-item">
+                      <span class="tech-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                          <circle cx="4" cy="6" r="2.2" fill="#10b981"/>
+                          <circle cx="4" cy="18" r="2.2" fill="#10b981"/>
+                          <circle cx="12" cy="12" r="2.2" fill="#059669"/>
+                          <circle cx="20" cy="6" r="2.2" fill="#047857"/>
+                          <circle cx="20" cy="18" r="2.2" fill="#047857"/>
+                          <path d="M6 7l4 4M6 17l4-4M14 11l4-4M14 13l4 4" stroke="#10b981" stroke-width="1.8" stroke-linecap="round"/>
+                        </svg>
+                      </span>
+                      <span class="tech-name">CNNs</span>
+                    </li>
+                    <li class="project-wrapper__tech-item">
+                      <span class="tech-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                          <path d="M2 12h3.5l2.5-7 4 14 3.5-10 2.5 5 2-2h4" stroke="#3b82f6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </span>
+                      <span class="tech-name">Processamento de Sinais</span>
+                    </li>
+                  </ul>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://github.com/caduobristo/tcc"
                 >
-                  See Live
+                  Ver Detalhes
                 </a>
-                <a
+                <!-- <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="#!"
+                  href="https://github.com/caduobristo/tcc"
                 >
                   Source Code
-                </a>
+                </a> -->
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="https://github.com/caduobristo/tcc" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -146,50 +185,82 @@
                     class="thumbnail rounded js-tilt"
                   >
                     <img
-                      alt="Project Image"
+                      alt="Imagem do Projeto"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/project0.jpeg"
                     />
                   </div>
                 </a>
               </div>
             </div>
           </div>
-          <!-- /END Project -->
+          <!-- /FIM Projeto 0 -->
 
-          <!-- Notice: each .row is a project -->
+          <!-- Projeto 1 -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 1</h3>
+                <h3 class="project-wrapper__text-title">Análise de acessibilidade urbana com visão computacional</h3>
                 <div>
                   <p class="mb-4">
-                    Demonstrate in this description the skills of a programmer: such as having commitment, 
-                    having perseverance and accepting alternative solutions. Remember that being a portfolio you are not selling the project, 
-                    you are selling yourself, it reflects the resources used: Frameworks, libraries, platforms, etc.
+                    Pipeline de visão computacional desenvolvido para avaliar a qualidade e a tipologia da infraestrutura de calçadas. O sistema processa recortes de panoramas de rua e utiliza modelos de visão fine-tunados para identificar defeitos de pavimentação, apoiando o planejamento urbano orientado a dados. 
                   </p>
+                </div>
+                <div class="project-wrapper__tech">
+                  <p class="project-wrapper__tech-title">Stack & Tecnologias:</p>
+                  <ul class="project-wrapper__tech-list">
+                    <li class="project-wrapper__tech-item">
+                      <span class="tech-icon"><i class="devicon-python-plain colored"></i></span>
+                      <span class="tech-name">Python</span>
+                    </li>
+                    <li class="project-wrapper__tech-item">
+                      <span class="tech-icon"><i class="devicon-pytorch-original colored"></i></span>
+                      <span class="tech-name">PyTorch</span>
+                    </li>
+                    <li class="project-wrapper__tech-item">
+                      <span class="tech-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                          <path d="M12.001 7.272c-2.073-2.613-4.834-3.692-7.464-2.822-2.903.96-4.537 3.905-4.537 7.027 0 4.195 3.016 7.523 7.069 7.523 2.766 0 5.093-1.577 6.13-3.695 1.037 2.118 3.364 3.695 6.13 3.695 4.053 0 7.069-3.328 7.069-7.523 0-3.122-1.634-6.067-4.537-7.027-2.63-.87-5.391.209-7.464 2.822h.604zm-5.13 10.378c-2.834 0-4.904-2.298-4.904-5.173 0-2.222 1.258-4.328 3.239-4.984 1.838-.608 3.82.164 5.253 2.148-1.077 4.67-2.316 8.009-3.588 8.009zm10.26 0c-1.272 0-2.511-3.339-3.588-8.009 1.433-1.984 3.415-2.756 5.253-2.148 1.981.656 3.239 2.762 3.239 4.984 0 2.875-2.07 5.173-4.904 5.173z" fill="#0081FB"/>
+                        </svg>
+                      </span>
+                      <span class="tech-name">DINOv2</span>
+                    </li>
+                    <li class="project-wrapper__tech-item">
+                      <span class="tech-icon"><i class="devicon-opencv-plain colored"></i></span>
+                      <span class="tech-name">Tratamento de Imagens</span>
+                    </li>
+                    <li class="project-wrapper__tech-item">
+                      <span class="tech-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#EA4335"/>
+                          <circle cx="12" cy="9" r="2.8" fill="#ffffff"/>
+                        </svg>
+                      </span>
+                      <span class="tech-name">Integração de APIs de Mapeamento</span>
+                    </li>
+                  </ul>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://github.com/Lauraknolll/APx-2026.2-Task2-Producao-de-dados-de-qualidade-e-tipologia-de-calcadas"
                 >
-                  See Live
+                  Ver Detalhes
                 </a>
-                <a
+                <!-- <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="#!"
+                  href="https://github.com/Lauraknolll/APx-2026.2-Task2-Producao-de-dados-de-qualidade-e-tipologia-de-calcadas"
                 >
                   Source Code
-                </a>
+                </a> -->
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="https://github.com/Lauraknolll/APx-2026.2-Task2-Producao-de-dados-de-qualidade-e-tipologia-de-calcadas" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -198,49 +269,84 @@
                     class="thumbnail rounded js-tilt"
                   >
                     <img
-                      alt="Project Image"
+                      alt="Imagem do Projeto"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/project1.png"
                     />
                   </div>
                 </a>
               </div>
             </div>
           </div>
-          <!-- /END Project -->
+          <!-- /FIM Projeto 1 -->
 
-          <!-- Notice: each .row is a project -->
+          <!-- Projeto 2 -->
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 2</h3>
+                <h3 class="project-wrapper__text-title">Music Charts Platform</h3>
                 <div>
                   <p class="mb-4">
-                    If the project was collaborative, reflect it in this description, that will demonstrate communication and/or leadership skills. 
-                    Additionally, if you made use of the mastery of a second language, it will reflect on you professionalism.
+                    Plataforma ponta a ponta de engenharia de dados para ingestão, processamento e análise de tendências musicais. O fluxo automatiza o web scraping, enriquece as faixas com features de áudio de APIs externas e orquestra as transformações diárias para um banco de dados analítico de forma escalável.
                   </p>
+                </div>
+                <div class="project-wrapper__tech">
+                  <p class="project-wrapper__tech-title">Stack & Tecnologias:</p>
+                  <ul class="project-wrapper__tech-list">
+                    <li class="project-wrapper__tech-item">
+                      <span class="tech-icon"><i class="devicon-python-plain colored"></i></span>
+                      <span class="tech-name">Python</span>
+                    </li>
+                    <li class="project-wrapper__tech-item">
+                      <span class="tech-icon"><i class="devicon-apacheairflow-plain colored"></i></span>
+                      <span class="tech-name">Apache Airflow</span>
+                    </li>
+                    <li class="project-wrapper__tech-item">
+                      <span class="tech-icon"><i class="devicon-docker-plain colored"></i></span>
+                      <span class="tech-name">Docker</span>
+                    </li>
+                    <li class="project-wrapper__tech-item">
+                      <span class="tech-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                          <rect x="2" y="4" width="20" height="16" rx="4" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.8"/>
+                          <text x="12" y="15" font-size="7.5" font-family="monospace" font-weight="bold" fill="#7c3aed" text-anchor="middle">API</text>
+                        </svg>
+                      </span>
+                      <span class="tech-name">APIs REST</span>
+                    </li>
+                    <li class="project-wrapper__tech-item">
+                      <span class="tech-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                          <ellipse cx="12" cy="5" rx="8" ry="2.5" fill="#ecfdf5"/>
+                          <path d="M4 5v6c0 1.38 3.58 2.5 8 2.5s8-1.12 8-2.5V5"/>
+                          <path d="M4 11v6c0 1.38 3.58 2.5 8 2.5s8-1.12 8-2.5V11"/>
+                        </svg>
+                      </span>
+                      <span class="tech-name">Modelagem de Dados</span>
+                    </li>
+                  </ul>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://github.com/caduobristo/music-charts-platform"
                 >
-                  See Live
+                  Ver Detalhes
                 </a>
-                <a
+                <!-- <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="#!"
+                  href="https://github.com/caduobristo/music-charts-platform"
                 >
                   Source Code
-                </a>
+                </a> -->
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
+                <a rel="noreferrer" href="https://github.com/caduobristo/music-charts-platform" target="_blank">
                   <div
                     data-tilt
                     data-tilt-max="4"
@@ -249,69 +355,65 @@
                     class="thumbnail rounded js-tilt"
                   >
                     <img
-                      alt="Project Image"
+                      alt="Imagem do Projeto"
                       class="img-fluid"
-                      src="assets/project.jpg"
+                      src="assets/project2.png"
                     />
                   </div>
                 </a>
               </div>
             </div>
           </div>
-          <!-- /END Project -->
+          <!-- /FIM Projeto 2 -->
         </div>
       </div>
     </section>
-    <!-- /END Projects Section -->
+    <!-- /FIM Seção de Projetos -->
 
-    <!-- **** Contact Section **** -->
+    <!-- **** Seção de Contato **** -->
     <section id="contact">
       <div class="container">
-        <h2 class="section-title">Contact</h2>
+        <h2 class="section-title">Contato</h2>
         <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
+          <p class="contact-wrapper__text">Gostaria de entrar em contato comigo?</p>
           <a
             rel="noreferrer"
             target="_blank"
             class="cta-btn cta-btn--resume"
-            href="mailto:example@email.com"
-            >Call to Action</a
+            href="mailto:caduobristo@hotmail.com"
+            >Enviar E-mail</a
           >
         </div>
       </div>
     </section>
-    <!-- /END Contact Section -->
+    <!-- /FIM Seção de Contato -->
 
-    <!-- **** Footer Section **** -->
+    <!-- **** Seção Rodapé **** -->
     <footer class="footer navbar-static-bottom">
       <div class="container">
         <a rel="noreferrer" href="#top" class="back-to-top">
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div class="social-links">
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-twitter fa-inverse"></i>
-          </a>
-          <a rel="noreferrer" href="#!" target="_blank">
+          <a rel="noreferrer" href="https://www.linkedin.com/in/carlos-eduardo-obristo-64870b213/" target="_blank">
             <i class="fa fa-linkedin fa-inverse"></i>
           </a>
-          <a rel="noreferrer" href="#!" target="_blank">
+          <a rel="noreferrer" href="https://github.com/caduobristo" target="_blank">
             <i class="fa fa-github fa-inverse"></i>
           </a>
         </div>
 
         <hr />
 
-        <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
         <p class="footer__text">
-          © 2021 - Template developed by
+          © 2026 - Carlos Eduardo Obristo | Template desenvolvido por
           <a rel="noreferrer" href="https://github.com/cobiwave" target="_blank"
             >Jacobo Martínez</a
           >
         </p>
       </div>
     </footer>
-    <!-- /END Footer Section -->
+    <!-- /FIM Seção Rodapé -->
 
     <script defer type="module" src="index.js"></script>
   </body>

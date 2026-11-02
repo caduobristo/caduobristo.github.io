@@ -6,7 +6,7 @@ Repositório do meu portfólio pessoal, desenvolvido para apresentar meus projet
 
 ---
 
-## 🚀 Como Executar Localmente
+## Como Executar Localmente
 
 ### Pré-requisitos
 - [Node.js](https://nodejs.org/) instalado
@@ -41,6 +41,6 @@ npm run build
 
 ---
 
-## 📄 Créditos
+## Créditos
 
 Template base: [Simplefolio](https://github.com/cobiwave/simplefolio) por [Jacobo Martínez](https://github.com/cobiwave).

@@ -6,7 +6,7 @@
   border-bottom: 0px;
   background: $white-color;
   font-weight: 400;
-  color: $dark-blue-text;
+  color: #000000;
   padding: 0rem 5.6rem;
   margin-bottom: 0;
   top: 0;
@@ -29,10 +29,25 @@
   }
 
   .hero-title {
+    color: #000000;
     font-size: 5.6rem;
     font-weight: 700;
     margin-bottom: 3.2rem;
     text-align: left;
+
+    .text-color-main {
+      background: none !important;
+      background-image: none !important;
+      -webkit-background-clip: initial !important;
+      background-clip: initial !important;
+      -webkit-text-fill-color: $secondary-color !important;
+      color: $secondary-color !important;
+
+      @include respond(phone) {
+        background-image: none !important;
+        -webkit-text-fill-color: $secondary-color !important;
+      }
+    }
 
     @include respond(tab-land) {
       font-size: 4rem;
