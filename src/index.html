@@ -43,18 +43,23 @@
     <!-- **** Seção Hero **** -->
     <section id="hero" class="jumbotron">
       <nav class="hero-nav">
-        <a href="#about" class="hero-nav__link">Sobre mim</a>
-        <a href="#projects" class="hero-nav__link">Projetos</a>
-        <a href="#contact" class="hero-nav__link">Contato</a>
+        <a href="#about" class="hero-nav__link" data-i18n="navAbout">Sobre mim</a>
+        <a href="#projects" class="hero-nav__link" data-i18n="navProjects">Projetos</a>
+        <a href="#contact" class="hero-nav__link" data-i18n="navContact">Contato</a>
+        <div class="lang-switch">
+          <button type="button" class="lang-switch__btn active" data-lang="pt" aria-label="Português">PT</button>
+          <span class="lang-switch__divider">/</span>
+          <button type="button" class="lang-switch__btn" data-lang="en" aria-label="English">EN</button>
+        </div>
       </nav>
       <div class="container">
         <h1 class="hero-title load-hidden">
-          Olá, meu nome é <span class="text-color-main">Carlos Eduardo Obristo</span>
+          <span data-i18n="heroGreeting">Olá, meu nome é</span> <span class="text-color-main">Carlos Eduardo Obristo</span>
           <br />
-          Desenvolvedor de Software & Cientista de Dados.
+          <span data-i18n="heroRole">Desenvolvedor de Software & Cientista de Dados.</span>
         </h1>
         <p class="hero-cta load-hidden">
-          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about" data-i18n="heroCta"
             >Saiba mais</a
           >
         </p>
@@ -65,12 +70,13 @@
     <!-- **** Seção Sobre mim **** -->
     <section id="about">
       <div class="container">
-        <h2 class="section-title load-hidden">Sobre mim</h2>
+        <h2 class="section-title load-hidden" data-i18n="aboutTitle">Sobre mim</h2>
         <div class="row about-wrapper">
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__image load-hidden">
               <img
                 alt="Foto de Perfil"
+                data-i18n-alt="profileAlt"
                 class="img-fluid rounded shadow-lg"
                 height="auto"
                 width="300px"
@@ -80,10 +86,10 @@
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
-              <p class="about-wrapper__info-text">
+              <p class="about-wrapper__info-text" data-i18n="aboutP1">
                 Sou desenvolvedor de software com forte atuação em Data Science e Engenharia de Dados. Trabalho na interseção entre Inteligência Artificial, processamento de dados complexos e a construção de produtos digitais. No mercado corporativo, desenvolvo agentes de IA e utilitários integrados ao ecossistema Linux, traduzindo modelos avançados e pipelines técnicos em soluções escaláveis e acessíveis para o usuário final. Minha base tecnológica é estruturada em Python, PyTorch, SQL e ferramentas de orquestração de dados (como Airflow), unindo o rigor analítico e a modelagem de dados às melhores práticas de engenharia de software para resolver problemas reais de negócio.
               </p>
-              <p class="about-wrapper__info-text">
+              <p class="about-wrapper__info-text" data-i18n="aboutP2">
                 Busco impulsionar produtos e negócios através da Ciência e Engenharia de Dados, sempre explorando novas tecnologias. Fora do código, minhas paixões se dividem entre jogos, boa música e um bom livro.
               </p>
               <!-- <span class="d-flex mt-3">
@@ -107,21 +113,21 @@
     <section id="projects">
       <div class="container">
         <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projetos</h2>
+          <h2 class="section-title dark-blue-text" data-i18n="projectsTitle">Projetos</h2>
 
           <!-- Projeto 0 -->
           <div class="row">
             <div class="col-lg-5 col-sm-12 project-wrapper__col-text">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Transformers de áudio para classificação de efeitos de guitarra</h3>
-                <p class="project-wrapper__text-subtitle">Trabalho de Conclusão de Curso</p>
+                <h3 class="project-wrapper__text-title" data-i18n="p1Title">Transformers de áudio para classificação de efeitos de guitarra</h3>
+                <p class="project-wrapper__text-subtitle" data-i18n="p1Subtitle">Trabalho de Conclusão de Curso</p>
                 <div>
-                  <p class="mb-4">
+                  <p class="mb-4" data-i18n="p1Desc">
                     Pesquisa acadêmica focada na classificação de sinais de áudio complexos utilizando arquiteturas modernas de Deep Learning. O projeto estabelece baselines rigorosos com redes convolucionais e avalia o desempenho e a eficiência computacional de Transformers de Áudio na extração de características de espectrogramas.
                   </p>
                 </div>
                 <div class="project-wrapper__tech">
-                  <p class="project-wrapper__tech-title">Stack & Tecnologias:</p>
+                  <p class="project-wrapper__tech-title" data-i18n="stackTitle">Stack & Tecnologias:</p>
                   <ul class="project-wrapper__tech-list">
                     <li class="project-wrapper__tech-item">
                       <span class="tech-icon"><i class="devicon-python-plain colored"></i></span>
@@ -150,7 +156,7 @@
                           <path d="M3 10v4M6 6v12M9 3v18M12 7v10M15 4v16M18 8v8M21 11v2" stroke="#f59e0b" stroke-width="2.2" stroke-linecap="round"/>
                         </svg>
                       </span>
-                      <span class="tech-name">Áudio Transformers</span>
+                      <span class="tech-name" data-i18n="audioTransformers">Áudio Transformers</span>
                     </li>
                     <li class="project-wrapper__tech-item">
                       <span class="tech-icon">
@@ -158,7 +164,7 @@
                           <path d="M2 12h3.5l2.5-7 4 14 3.5-10 2.5 5 2-2h4" stroke="#3b82f6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                       </span>
-                      <span class="tech-name">Processamento de Sinais</span>
+                      <span class="tech-name" data-i18n="signalProcessing">Processamento de Sinais</span>
                     </li>
                   </ul>
                 </div>
@@ -167,6 +173,7 @@
                   target="_blank"
                   class="cta-btn cta-btn--hero"
                   href="https://github.com/caduobristo/tcc"
+                  data-i18n="viewDetails"
                 >
                   Ver Detalhes
                 </a>
@@ -192,6 +199,7 @@
                   >
                     <img
                       alt="Imagem do Projeto"
+                      data-i18n-alt="projectAlt"
                       class="img-fluid"
                       src="assets/project0.jpeg"
                     />
@@ -206,15 +214,15 @@
           <div class="row">
             <div class="col-lg-5 col-sm-12 project-wrapper__col-text">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Análise de acessibilidade urbana com visão computacional</h3>
-                <p class="project-wrapper__text-subtitle">Projeto de Extensão em parceria com o IPPUC</p>
+                <h3 class="project-wrapper__text-title" data-i18n="p2Title">Análise de acessibilidade urbana com visão computacional</h3>
+                <p class="project-wrapper__text-subtitle" data-i18n="p2Subtitle">Projeto de Extensão em parceria com o IPPUC</p>
                 <div>
-                  <p class="mb-4">
+                  <p class="mb-4" data-i18n="p2Desc">
                     Pipeline de visão computacional desenvolvido para avaliar a qualidade e a tipologia da infraestrutura de calçadas. O sistema processa recortes de panoramas de rua e utiliza modelos de visão fine-tunados para identificar defeitos de pavimentação, apoiando o planejamento urbano orientado a dados. 
                   </p>
                 </div>
                 <div class="project-wrapper__tech">
-                  <p class="project-wrapper__tech-title">Stack & Tecnologias:</p>
+                  <p class="project-wrapper__tech-title" data-i18n="stackTitle">Stack & Tecnologias:</p>
                   <ul class="project-wrapper__tech-list">
                     <li class="project-wrapper__tech-item">
                       <span class="tech-icon"><i class="devicon-python-plain colored"></i></span>
@@ -234,7 +242,7 @@
                     </li>
                     <li class="project-wrapper__tech-item">
                       <span class="tech-icon"><i class="devicon-opencv-plain colored"></i></span>
-                      <span class="tech-name">Tratamento de Imagens</span>
+                      <span class="tech-name" data-i18n="imageProcessing">Tratamento de Imagens</span>
                     </li>
                     <li class="project-wrapper__tech-item">
                       <span class="tech-icon">
@@ -243,7 +251,7 @@
                           <circle cx="12" cy="9" r="2.8" fill="#ffffff"/>
                         </svg>
                       </span>
-                      <span class="tech-name">Integração de APIs de Mapeamento</span>
+                      <span class="tech-name" data-i18n="mappingApis">Integração de APIs de Mapeamento</span>
                     </li>
                   </ul>
                 </div>
@@ -252,6 +260,7 @@
                   target="_blank"
                   class="cta-btn cta-btn--hero"
                   href="https://github.com/Lauraknolll/APx-2026.2-Task2-Producao-de-dados-de-qualidade-e-tipologia-de-calcadas"
+                  data-i18n="viewDetails"
                 >
                   Ver Detalhes
                 </a>
@@ -277,6 +286,7 @@
                   >
                     <img
                       alt="Imagem do Projeto"
+                      data-i18n-alt="projectAlt"
                       class="img-fluid"
                       src="assets/project1.png"
                     />
@@ -291,15 +301,15 @@
           <div class="row">
             <div class="col-lg-5 col-sm-12 project-wrapper__col-text">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Music Charts Platform</h3>
-                <p class="project-wrapper__text-subtitle">Projeto Pessoal</p>
+                <h3 class="project-wrapper__text-title" data-i18n="p3Title">Music Charts Platform</h3>
+                <p class="project-wrapper__text-subtitle" data-i18n="p3Subtitle">Projeto Pessoal</p>
                 <div>
-                  <p class="mb-4">
+                  <p class="mb-4" data-i18n="p3Desc">
                     Plataforma ponta a ponta de engenharia de dados para ingestão, processamento e análise de tendências musicais. O fluxo automatiza o web scraping, enriquece as faixas com features de áudio de APIs externas e orquestra as transformações diárias para um banco de dados analítico de forma escalável.
                   </p>
                 </div>
                 <div class="project-wrapper__tech">
-                  <p class="project-wrapper__tech-title">Stack & Tecnologias:</p>
+                  <p class="project-wrapper__tech-title" data-i18n="stackTitle">Stack & Tecnologias:</p>
                   <ul class="project-wrapper__tech-list">
                     <li class="project-wrapper__tech-item">
                       <span class="tech-icon"><i class="devicon-python-plain colored"></i></span>
@@ -330,7 +340,7 @@
                           <path d="M4 11v6c0 1.38 3.58 2.5 8 2.5s8-1.12 8-2.5V11"/>
                         </svg>
                       </span>
-                      <span class="tech-name">Modelagem de Dados</span>
+                      <span class="tech-name" data-i18n="dataModeling">Modelagem de Dados</span>
                     </li>
                   </ul>
                 </div>
@@ -339,6 +349,7 @@
                   target="_blank"
                   class="cta-btn cta-btn--hero"
                   href="https://github.com/caduobristo/music-charts-platform"
+                  data-i18n="viewDetails"
                 >
                   Ver Detalhes
                 </a>
@@ -364,6 +375,7 @@
                   >
                     <img
                       alt="Imagem do Projeto"
+                      data-i18n-alt="projectAlt"
                       class="img-fluid"
                       src="assets/project2.png"
                     />
@@ -381,14 +393,15 @@
     <!-- **** Seção de Contato **** -->
     <section id="contact">
       <div class="container">
-        <h2 class="section-title">Contato</h2>
+        <h2 class="section-title" data-i18n="contactTitle">Contato</h2>
         <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">Gostaria de entrar em contato comigo?</p>
+          <p class="contact-wrapper__text" data-i18n="contactText">Gostaria de entrar em contato comigo?</p>
           <a
             rel="noreferrer"
             target="_blank"
             class="cta-btn cta-btn--resume"
             href="mailto:caduobristo@hotmail.com"
+            data-i18n="contactCta"
             >Enviar E-mail</a
           >
         </div>
@@ -414,7 +427,7 @@
         <hr />
 
         <p class="footer__text">
-          © 2026 - Carlos Eduardo Obristo | Template desenvolvido por
+          © 2026 - Carlos Eduardo Obristo | <span data-i18n="footerCredit">Template desenvolvido por</span>
           <a rel="noreferrer" href="https://github.com/cobiwave" target="_blank"
             >Jacobo Martínez</a
           >
